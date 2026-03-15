@@ -255,10 +255,10 @@ export default function BookingPage() {
                   <div className="text-4xl font-black gradient-text">{form.players_count}</div>
                   <div className="text-xs" style={{ color: '#4b5563' }}>человек</div>
                 </div>
-                <button onClick={() => set('players_count', Math.min(50, form.players_count + 1))}
+                <button onClick={() => set('players_count', Math.min(15, form.players_count + 1))}
                   style={{ width: 44, height: 44, borderRadius: 12, background: 'rgba(168,85,247,0.15)', border: '1px solid rgba(168,85,247,0.3)', color: '#c084fc', fontSize: 22, fontWeight: 'bold', cursor: 'pointer', WebkitTapHighlightColor: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>+</button>
               </div>
-              <input type="range" min={1} max={50} value={form.players_count}
+              <input type="range" min={1} max={15} value={form.players_count}
                 onChange={e => set('players_count', +e.target.value)}
                 className="w-full h-1.5 rounded-full appearance-none cursor-pointer mt-3"
                 style={{ background: `linear-gradient(to right,#a855f7 ${((form.players_count - 1) / 49) * 100}%,rgba(255,255,255,0.1) ${((form.players_count - 1) / 49) * 100}%)` }} />
