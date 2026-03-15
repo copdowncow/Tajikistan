@@ -26,7 +26,9 @@ export async function POST(req: NextRequest) {
       `📋 Бронь: #${bookingNumber}\n` +
       `👤 ${customerName}\n` +
       `📞 ${customerPhone}\n` +
-      `💰 Предоплата 50 сомони\n\n` +
+      `💰 Предоплата 50 сомони\n` +
+      `📱 Алиф или Dushanbe City (DC)\n` +
+      `📞 +992 20 840 00 00\n\n` +
       `_Нажмите «Предоплата получена» для подтверждения брони_`;
 
     const tgForm = new FormData();
