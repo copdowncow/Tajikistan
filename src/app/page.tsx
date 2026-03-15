@@ -229,7 +229,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
             {[
               {icon:'📍',title:'Адрес',val:'Чордомаи Аэропорт, рядом с клиникой «Нигох»'},
-              {icon:'📞',title:'Телефон',val:'+992 50 213 14 15',href:'tel:+992502131415'},
+              {icon:'📞',title:'Телефон',val:'+992 20 840 00 00',href:'tel:+992208400000'},
               {icon:'🕐',title:'Режим работы',val:'Ежедневно 10:00 – 23:00'},
             ].map(c=>(
               <div key={c.title} className="card p-5 text-center">
@@ -239,7 +239,7 @@ export default function HomePage() {
               </div>
             ))}
           </div>
-          <a href="tel:+992502131415" className="flex items-center justify-center gap-2 w-full text-white font-bold py-4 rounded-2xl text-base" style={{background:'linear-gradient(135deg,#16a34a,#15803d)',WebkitTapHighlightColor:'transparent'}}>
+          <a href="tel:+992208400000" className="flex items-center justify-center gap-2 w-full text-white font-bold py-4 rounded-2xl text-base" style={{background:'linear-gradient(135deg,#16a34a,#15803d)',WebkitTapHighlightColor:'transparent'}}>
             📞 Позвонить нам
           </a>
         </div>
