@@ -120,7 +120,9 @@ export default function BookingPage() {
           <div className="card-accent p-4 mb-4">
             <p className="text-sm font-bold mb-2" style={{ color: '#d8b4fe' }}>💰 Как оплатить {success.prepayment_amount} сомони:</p>
             <p className="text-sm leading-relaxed" style={{ color: '#94a3b8' }}>
-              Переведите на <strong className="text-white">+992 50 213 14 15</strong> через Алиф или СМАРТ. Прикрепите скриншот.
+              Переведите <strong className="text-white">{success.prepayment_amount} сомони</strong> на номер <strong className="text-white">+992 20 840 00 00</strong> через:<br/>
+              <span style={{color:'#c084fc'}}>• Алиф</span> или <span style={{color:'#c084fc'}}>• Dushanbe City (DC)</span><br/>
+              Затем прикрепите скриншот чека.
             </p>
           </div>
         )}
