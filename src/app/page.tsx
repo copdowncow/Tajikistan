@@ -1,4 +1,4 @@
-'use client';
+use client';
 import Link from 'next/link';
 import { useState } from 'react';
 
@@ -29,7 +29,7 @@ function BallsCalc() {
   const [players, setPlayers] = useState(4);
   const [perPlayer, setPerPlayer] = useState(200);
   const total = players * perPlayer;
-  const MAX = 50;
+  const MAX = 15;
   return (
     <div className="card p-6 space-y-6">
       <div>
@@ -48,7 +48,7 @@ function BallsCalc() {
         <input type="range" min={1} max={MAX} value={players} onChange={e=>setPlayers(+e.target.value)}
           className="w-full h-1.5 rounded-full appearance-none cursor-pointer mt-3"
           style={{background:`linear-gradient(to right,#a855f7 ${((players-1)/(MAX-1))*100}%,rgba(255,255,255,0.1) ${((players-1)/(MAX-1))*100}%)`}}/>
-        <div className="flex justify-between text-xs mt-1" style={{color:'#374151'}}><span>1</span><span>10</span><span>25</span><span>50</span></div>
+        <div className="flex justify-between text-xs mt-1" style={{color:'#374151'}}><span>1</span><span>5</span><span>15</span></div>
       </div>
       <div>
         <span className="block text-sm font-semibold text-white mb-3">🎯 Шаров на каждого игрока</span>
